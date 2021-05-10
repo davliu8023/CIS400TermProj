@@ -13,9 +13,7 @@ auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET,
 api = twitter.Twitter(auth=auth)
 
 
-#filter tweets by location: defined as syracuse university 
-
-#also taking into account of the fact that the SU community is diverse and users might tweet with another language. 
+### UNCOMMENT only one date to get the tweets from the specific date
 q= "until:2021-05-11 -filter:retweets" #get twitters from May 10th 
 #q= "until:2021-05-10 -filter:retweets" #get twitters from May 9th 
 #q= "until:2021-05-9 -filter:retweets" #get twitters from May 8th 
@@ -26,6 +24,9 @@ q= "until:2021-05-11 -filter:retweets" #get twitters from May 10th
 #q= "until:2021-05-4 -filter:retweets" #get twitters from May 3th 
 
 results = api.search.tweets(q=q, lang="en", count=100, geocode='43.035198,-76.139297,10mi')['statuses']
+# results uses SU geocode to find tweets within the SU campus
+# langauge tag set to english cuz we are not analyzing anything other than english 
+
 tweets = [r['text'] for r in results]
 
 print(tweets)
