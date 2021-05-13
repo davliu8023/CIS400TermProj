@@ -45,9 +45,11 @@ if __name__ == "__main__":
     screennames = screenName.gather_screen_names(12)
     #tweetlist_covid = []
     #screennames_covid = screenName.gather_screen_names_covid(12)
-    temp_list = []
-    for i in range(100): 
-        temp_list.append(screennames[i])
+    ##for i in range(100): 
+    #    temp_list.append(screennames[i])
+    temp_list = screennames #NOTE that right here we are going all out with all user screen names 
+    #but for laptops/computers with lesser amount of ram/swap, you might have to have a smaller sample size 
+            #for each run 
 
     progress = 0
     for user in temp_list: 
