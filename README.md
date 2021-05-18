@@ -9,10 +9,15 @@ Steps to install necessary libraries: in terminal/ powershell
 - pip install nltk
 - python3
 >>> import nltk
+>>> 
 >>> nltk.download('twitter_samples')
+>>> 
 >>> nltk.download('wordnet')
+>>> 
 >>> nltk.download('averaged_perceptron_tagger')
+>>> 
 >>> nltk.download('stopwords')
+>>> 
 >>> nltk.download('punkt')
 
 then proceed to run main.py in terminal/console
