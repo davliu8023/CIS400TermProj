@@ -23,4 +23,4 @@ Steps to install necessary libraries: in terminal/ powershell
 then proceed to run main.py in terminal/console
 (remember to paste in developer credentials in dev_login.py)
 
-PROJECT LINK GITHUB: 
+PROJECT LINK GITHUB: https://github.com/davliu8023/CIS400TermProj
